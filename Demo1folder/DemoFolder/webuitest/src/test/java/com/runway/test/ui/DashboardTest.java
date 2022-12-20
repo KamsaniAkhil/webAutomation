@@ -126,13 +126,6 @@ public class DashboardTest implements IRetryAnalyzer, IAnnotationTransformer {
 		logger.info("Asserting Logo css value");
 		Assert.assertEquals(logoPosition, "middle");
 
-//		if (logoPosition.contains("middle")) {
-//
-//			tr.addResultForTestCase("1", "1", tr.TEST_CASE_PASSED_STATUS, "");
-//		} else {
-//			tr.addResultForTestCase("1", "1", tr.TEST_CASE_PASSED_STATUS, "");
-//
-//		}
 
 	}
 
