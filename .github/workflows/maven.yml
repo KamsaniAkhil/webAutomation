@@ -6,8 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Java CI with Maven
-
+name: final Workflow for Windows
 on:
   push:
     branches: [ "main" ]
@@ -18,7 +17,7 @@ env:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v3
