@@ -352,7 +352,7 @@ public class DashboardTest implements IRetryAnalyzer, IAnnotationTransformer {
 	}
 
 	/* TestCaseId - C19022 */
-	@Test(enabled = true, priority = 11)
+	@Test(enabled = false, priority = 11)
 	public void footerElements() {
 
 		logger.info("Getting Icon and Version number");
