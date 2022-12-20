@@ -11,8 +11,6 @@ name: Java CI with Maven
 on:
   push:
     branches: [ "QA" ]
-  pull_request:
-    branches: [ "QA" ]
     
 env:
   WORKING_DIRECTORY: Demo1folder/DemoFolder/webuitest/pom.xml
