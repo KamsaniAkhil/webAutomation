@@ -1,0 +1,5 @@
+# Created at 2022-12-14T16:38:50.612
+Boot Manifest-JAR contains absolute paths in classpath 'D:\AIMS360_Testing\runway\sourcecode\QA\ui-automation\webuitest\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

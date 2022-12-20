@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="294648" started-at="2022-12-14T16:52:19 IST" finished-at="2022-12-14T16:57:14 IST">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="294648" started-at="2022-12-14T16:52:19 IST" finished-at="2022-12-14T16:57:14 IST">
+      <class name="com.runway.test.ui.SyncData">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.runway.test.ui.SyncData@4d3167f4]" name="setup" is-config="true" duration-ms="14265" started-at="2022-12-14T16:52:19 IST" finished-at="2022-12-14T16:52:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.runway.test.ui.SyncData@4d3167f4]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2022-12-14T16:52:33 IST" finished-at="2022-12-14T16:52:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.runway.test.ui.SyncData.syncDataUITest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="syncDataUITest()[pri:1, instance:com.runway.test.ui.SyncData@4d3167f4]" name="syncDataUITest" duration-ms="48417" started-at="2022-12-14T16:52:33 IST" finished-at="2022-12-14T16:53:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- syncDataUITest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.runway.test.ui.SyncData@4d3167f4]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-12-14T16:53:22 IST" finished-at="2022-12-14T16:53:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.runway.test.ui.SyncData.syncDataLableTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="syncDataLableTest()[pri:2, instance:com.runway.test.ui.SyncData@4d3167f4]" name="syncDataLableTest" duration-ms="3221" started-at="2022-12-14T16:53:22 IST" finished-at="2022-12-14T16:53:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- syncDataLableTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.runway.test.ui.SyncData@4d3167f4]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-12-14T16:53:25 IST" finished-at="2022-12-14T16:53:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.runway.test.ui.SyncData.syncStatus()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="syncStatus()[pri:3, instance:com.runway.test.ui.SyncData@4d3167f4]" name="syncStatus" duration-ms="31355" started-at="2022-12-14T16:53:25 IST" finished-at="2022-12-14T16:53:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- syncStatus -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.runway.test.ui.SyncData@4d3167f4]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2022-12-14T16:53:56 IST" finished-at="2022-12-14T16:53:56 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.runway.test.ui.SyncData.jobTriggeredTimeTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="jobTriggeredTimeTest()[pri:4, instance:com.runway.test.ui.SyncData@4d3167f4]" name="jobTriggeredTimeTest" duration-ms="128390" started-at="2022-12-14T16:53:56 IST" finished-at="2022-12-14T16:56:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jobTriggeredTimeTest -->
+        <test-method status="PASS" signature="syncDataSuccessStatusTest()[pri:5, instance:com.runway.test.ui.SyncData@4d3167f4]" name="syncDataSuccessStatusTest" duration-ms="25074" started-at="2022-12-14T16:56:05 IST" finished-at="2022-12-14T16:56:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- syncDataSuccessStatusTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.runway.test.ui.SyncData@4d3167f4]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-12-14T16:56:05 IST" finished-at="2022-12-14T16:56:05 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.runway.test.ui.SyncData.syncDataSuccessStatusTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.runway.test.ui.SyncData@4d3167f4]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2022-12-14T16:56:30 IST" finished-at="2022-12-14T16:56:30 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.runway.test.ui.SyncData.syncDataFailedStatusTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="syncDataFailedStatusTest()[pri:6, instance:com.runway.test.ui.SyncData@4d3167f4]" name="syncDataFailedStatusTest" duration-ms="21775" started-at="2022-12-14T16:56:30 IST" finished-at="2022-12-14T16:56:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- syncDataFailedStatusTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.runway.test.ui.SyncData@4d3167f4]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-12-14T16:56:51 IST" finished-at="2022-12-14T16:56:51 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.runway.test.ui.SyncData.reprocessTestForFailedNoPODetails()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="reprocessTestForFailedNoPODetails()[pri:7, instance:com.runway.test.ui.SyncData@4d3167f4]" name="reprocessTestForFailedNoPODetails" duration-ms="18914" started-at="2022-12-14T16:56:51 IST" finished-at="2022-12-14T16:57:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reprocessTestForFailedNoPODetails -->
+        <test-method status="PASS" signature="reprocessForFailedJobs()[pri:8, instance:com.runway.test.ui.SyncData@4d3167f4]" name="reprocessForFailedJobs" duration-ms="3168" started-at="2022-12-14T16:57:10 IST" finished-at="2022-12-14T16:57:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reprocessForFailedJobs -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.runway.test.ui.SyncData@4d3167f4]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-12-14T16:57:10 IST" finished-at="2022-12-14T16:57:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.runway.test.ui.SyncData.reprocessForFailedJobs()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+      </class> <!-- com.runway.test.ui.SyncData -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

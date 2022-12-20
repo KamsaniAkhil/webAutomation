@@ -1,0 +1,9 @@
+document.getElementById('body-id').style.backgroundColor = 'whitesmoke';
+document.getElementById('page-id').style.backgroundColor = 'whitesmoke';
+//document.getElementById('page-id').innerHTML = 'Test Suite Results';
+document.getElementById('page-id').style.fontSize = '50px';
+document.getElementById('page-id').style.color = 'darkslategray';
+document.getElementById('footer-id').style.backgroundColor = 'whitesmoke';
+document.getElementById('footer-id').innerHTML = 'Test Results @0.1';
+document.getElementById('footer-id').style.fontSize = '20px';
+document.getElementById('footer-id').style.color = 'darkslategray';

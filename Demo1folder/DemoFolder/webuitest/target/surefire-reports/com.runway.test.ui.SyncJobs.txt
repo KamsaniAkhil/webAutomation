@@ -1,0 +1,60 @@
+-------------------------------------------------------------------------------
+Test set: com.runway.test.ui.SyncJobs
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 136.516 s <<< FAILURE! - in com.runway.test.ui.SyncJobs
+SyncJObsTest(com.runway.test.ui.SyncJobs)  Time elapsed: 28.573 s  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index: 2, Size: 1
+	at com.runway.test.ui.SyncJobs.SyncJObsTest(SyncJobs.java:130)
+
+syncJobPaginationTest(com.runway.test.ui.SyncJobs)  Time elapsed: 31.329 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //a[text()='›'] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NEXGEN84', ip: '192.168.1.204', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\AKHILK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56724}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7581db2dbdc24d9841cd5607b6a996a4
+	at com.runway.test.ui.SyncJobs.syncJobPaginationTest(SyncJobs.java:167)
+
+purchaseOrderCountTest(com.runway.test.ui.SyncJobs)  Time elapsed: 3.137 s  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index: 4, Size: 1
+	at com.runway.test.ui.SyncJobs.purchaseOrderCountTest(SyncJobs.java:188)
+
+successCountTest(com.runway.test.ui.SyncJobs)  Time elapsed: 3.114 s  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at com.runway.test.ui.SyncJobs.successCountTest(SyncJobs.java:222)
+
+SyncedPoUrlTest(com.runway.test.ui.SyncJobs)  Time elapsed: 3.115 s  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at com.runway.test.ui.SyncJobs.SyncedPoUrlTest(SyncJobs.java:256)
+
+failedCountTest(com.runway.test.ui.SyncJobs)  Time elapsed: 28.271 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //table//tbody//tr (tried for 25 second(s) with 500 milliseconds interval)
+	at com.runway.test.ui.SyncJobs.failedCountTest(SyncJobs.java:275)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//table//tbody//tr"}
+  (Session info: chrome=108.0.5359.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NEXGEN84', ip: '192.168.1.204', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\AKHILK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56724}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7581db2dbdc24d9841cd5607b6a996a4
+*** Element info: {Using=xpath, value=//table//tbody//tr}
+	at com.runway.test.ui.SyncJobs.failedCountTest(SyncJobs.java:275)
+
+jobIdfilterTest(com.runway.test.ui.SyncJobs)  Time elapsed: 28.058 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //table//tr (tried for 25 second(s) with 500 milliseconds interval)
+	at com.runway.test.ui.SyncJobs.jobIdfilterTest(SyncJobs.java:313)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//table//tr"}
+  (Session info: chrome=108.0.5359.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NEXGEN84', ip: '192.168.1.204', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\AKHILK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56724}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7581db2dbdc24d9841cd5607b6a996a4
+*** Element info: {Using=xpath, value=//table//tr}
+	at com.runway.test.ui.SyncJobs.jobIdfilterTest(SyncJobs.java:313)
+

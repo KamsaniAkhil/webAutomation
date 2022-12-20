@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>TestSuiteResults</title>
+<script type="text/javascript" src="data/datafile.js"></script>
+<script type="text/javascript" src="data/chart_min.js"></script>
+<script type="text/javascript" src="data/chart_piece_label.js"></script>
+<script type="text/javascript" src="data/report_functions.js"></script>
+<link rel="stylesheet" type="text/css" href="data/sortable.css">
+<link rel="stylesheet" type="text/css" href="data/report.css">
+</head>
+<body id="body-id" onload="LoadData()">
+
+<div class = "table-class">
+	<table id='table-id'>
+		<tr>
+			<div id="page-id" style="position: relative; text-align:center;"></div>
+		</tr>	
+		<tr>
+			<div id="page-version-id" style="position: relative; text-align:center; font-size: '20px'; font-weight: bold;"></div>
+		</tr>
+		<tr>
+			<td width=50% height='25px'>
+				<div id="time-chart-id" style="width: 100%">
+					<canvas id="etime-chart-id"> </canvas>
+				</div>
+				<div style="text-align: center">
+					<button id="back-id" disabled type="button" onclick="pagesplit('')">&laquo;</button>
+					<input id="page-button-id" type="button"></input>
+					<button type="button" id="forward-id" onclick="pagesplit('next')">&raquo;</button> 
+				</div>
+			</td>
+			
+			<td width="50%" height='25px'>
+				<div id="result-chart-head-id">Results Chart Summary</div>
+				
+				<div id="test-results-id" onload="updateStatus()">
+					<canvas id="test-summary-id" height="200"/>
+				</div>
+			
+			</td>
+		</tr>
+		
+		<tr>
+			<td width="50%" height='25px'>
+				<div style="font-weight: bold; left: 28%; top: 0; position: relative;">Exceptions Observed </div>
+				<div id="test-results-id" onload="updateStatus()">
+					<canvas id="result-exceptions-id" height="200"/>
+				</div>
+			</td>
+			
+			<td width="50%" style="text-align: center; font-weight: bolder;" height='25px'>
+				<div id="results-tables-id" style="width: 220px; margin: auto;">
+				<table id="time-id" style="border: none; margin-bottom: 30px">
+					<tr>
+						<th colspan="3"> Suite Execution Time </th>
+					</tr>
+					<tr>
+						<td colspan="3" style="text-align: center; background-color: #87cefa">hours:minutes:seconds<br>
+						<span id="execution-time-id" style="font-size: 30px; font-weight: bold;"></span>
+						</td>
+					</tr>
+				</table>
+
+
+				<table id="results-id" style="border: none;">
+				  <tr> 
+				  	<th colspan="3">Results for Test Suite</th>
+				  </tr>
+				</table>
+				</div>
+			</td>
+		</tr>
+	</table>
+</div>
+	
+<div class="table-class" style="position: relative;">
+
+<div style="text-align:center;"> <input id="refresh-id" type="checkbox" onclick="continuousRefresh()" checked><b> : Refresh </b></div>
+	
+	<div style="text-align:center;"><span> <input id="pass-check-id" type="checkbox" onclick="toggle('PASSED')" checked><b> : PASSED </b></span>
+	<span> <input id="fail-check-id" type="checkbox" onclick="toggle('FAILED')" checked><b> : FAILED </b></span>
+	<span> <input id="skip-check-id" type="checkbox" onclick="toggle('SKIPPED')" checked><b> : SKIPPED </b></span></div>
+	<div class ="to-search-class">
+		<input type="text" name="to-search" placeholder="TO SEARCH" id="search-input-id" onkeyup="search()">	
+	</div>
+	
+	<table id="results-table-id" class="sortable" width="1300">
+	
+		<thead>
+			<tr>
+				<th width="50px">SNo</th>
+				<th width="250px">Test Suite</th>
+				<th width="250px">Test Case Name</th>
+				<th width="70px"> Time(s)</th>
+				<th width="80px">Status</th>
+				<th id="exception-id">Exception Observed</th>
+			</tr>
+		</thead>
+		<tbody id="all-rows-id"></tbody>
+		
+		<tr></tr>
+		<tr></tr>
+	</table>
+	<div id="style-id" class="style-class">
+		<span class="end-class">&times;</span>
+		<img class="style-content-class" id="img">
+	</div>
+	
+	<footer> 
+		<div style="position: fixed; width: 100%; left: 0; bottom: 0; background-color: blue; color: black; text-align: center;" id="footer-id"></div>
+	</footer>
+	<script type="text/javascript" src="data/report_style.js"></script>
+	<script type="text/javascript" src="data/sortable.js"></script>
+</body>
+</html>

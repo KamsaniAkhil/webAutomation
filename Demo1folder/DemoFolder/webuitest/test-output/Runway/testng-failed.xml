@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Runway]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.ots.test.ui.common.utils.TestNGCustomResults"/>
+  </listeners>
+  <test thread-count="5" parallel="classes" name="Test(failed)">
+    <classes>
+      <class name="com.ots.test.ui.OtsEnhancement">
+        <methods>
+          <include name="topBarTestWithOtsCalculation"/>
+          <include name="sideBarSubMenuForFullyQualifiedURL"/>
+          <include name="beforeMethod"/>
+          <include name="logoutForFullyQualifiedURL"/>
+          <include name="topBarTest"/>
+          <include name="unsetUp"/>
+          <include name="topBarWithOtsDate"/>
+          <include name="setup"/>
+          <include name="refreshesTheApplicationForFullyQualifiedURL"/>
+          <include name="baseURL"/>
+          <include name="topBarWithDisplayStock"/>
+          <include name="sideBarMainMenuForFullyQualifiedURL"/>
+          <include name="wmsSubComponentcaseSensitiveTest"/>
+          <include name="wrongURLendPointFOrMainMenuEndPoint"/>
+          <include name="wrongURLendPointFOrSubMenuEndPoint"/>
+        </methods>
+      </class> <!-- com.ots.test.ui.OtsEnhancement -->
+      <class name="com.ots.test.ui.NegativeOTSByDateTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="otsDateTestCheckEmptyDate"/>
+          <include name="otsDatePastDateErrorText"/>
+          <include name="otsDatefutureDate"/>
+          <include name="runReportWithSameDate"/>
+          <include name="otsDatePastDateTest"/>
+          <include name="unsetup"/>
+          <include name="addedDateFieldTest"/>
+          <include name="setup"/>
+          <include name="runReportWithPastDateField"/>
+          <include name="otsDateAddDateFieldFutureDayTest"/>
+          <include name="runReportWithPastDate"/>
+          <include name="runReportDateNoOption"/>
+          <include name="runReportDatePresentDate"/>
+          <include name="otsDatePresentDate"/>
+          <include name="otsDateEmptyDateFieldAndErrorMessage"/>
+        </methods>
+      </class> <!-- com.ots.test.ui.NegativeOTSByDateTest -->
+      <class name="com.ots.test.api.OTSApiTest">
+        <methods>
+          <include name="login"/>
+          <include name="securityCodeAndZone"/>
+          <include name="authenticate"/>
+        </methods>
+      </class> <!-- com.ots.test.api.OTSApiTest -->
+      <class name="com.ots.test.ui.DashboardTest">
+        <methods>
+          <include name="profileIconTestBeforeClick"/>
+          <include name="bellIconTestBeforeClick"/>
+          <include name="bellIconAfterClick"/>
+          <include name="logOut"/>
+          <include name="NavigateToDashboard"/>
+          <include name="unsetUp"/>
+          <include name="setup"/>
+          <include name="profileIconTestAfterClick"/>
+          <include name="bellIconAfterClickCSS"/>
+          <include name="beforeMethod"/>
+          <include name="NavigateToReports"/>
+        </methods>
+      </class> <!-- com.ots.test.ui.DashboardTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Runway] -->

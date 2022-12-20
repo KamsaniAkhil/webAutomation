@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Runway">
+  <test thread-count="5" name="Test">
+    <classes>
+      
+      <class name="com.runway.test.ui.OTSByDateTest"/>
+      <class name="com.runway.test.ui.LoginTest"/>
+      <class name="com.runway.test.ui.DashboardTest"/>
+      <class name="com.runway.test.ui.NegativeOTSByDateTest"/>
+      <class name="com.runway.test.ui.SyncManuallyTest"/>
+      <class name="com.runway.test.ui.SyncJobs"/>
+      <class name="com.runway.test.ui.SyncSettingsTest"/>
+      <class name="com.runway.test.ui.SyncData"/>
+      <class name="com.runway.test.api.MondaycomApiTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Runway -->

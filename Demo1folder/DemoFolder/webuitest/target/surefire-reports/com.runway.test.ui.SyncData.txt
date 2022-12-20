@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.runway.test.ui.SyncData
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 295.075 s - in com.runway.test.ui.SyncData

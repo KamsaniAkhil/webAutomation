@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Reports]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.ots.test.ui.common.utils.TestNGCustomResults"/>
+  </listeners>
+  <test thread-count="5" parallel="classes" name="Test(failed)">
+    <classes>
+      <class name="com.ots.test.ui.NegativeLoginTest">
+        <methods>
+          <include name="runReportDatePresentDate"/>
+          <include name="setup"/>
+          <include name="runReportWithPastDateField"/>
+          <include name="unsetup"/>
+          <include name="otsDatePresentDate"/>
+          <include name="addedDateFieldTest"/>
+          <include name="otsDateEmptyDateFieldAndErrorMessage"/>
+          <include name="runReportWithPastDate"/>
+          <include name="runReportDateNoOption"/>
+          <include name="otsDateTestCheckEmptyDate"/>
+          <include name="runReportWithSameDate"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.ots.test.ui.NegativeLoginTest -->
+      <class name="com.ots.test.ui.DashboardTest">
+        <methods>
+          <include name="profileIconTestBeforeClick"/>
+          <include name="bellIconTestBeforeClick"/>
+          <include name="bellIconAfterClick"/>
+          <include name="logOut"/>
+          <include name="NavigateToDashboard"/>
+          <include name="unsetUp"/>
+          <include name="setup"/>
+          <include name="profileIconTestAfterClick"/>
+          <include name="bellIconAfterClickCSS"/>
+          <include name="beforeMethod"/>
+          <include name="NavigateToReports"/>
+        </methods>
+      </class> <!-- com.ots.test.ui.DashboardTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Reports] -->
