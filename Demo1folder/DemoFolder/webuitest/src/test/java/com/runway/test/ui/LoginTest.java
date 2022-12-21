@@ -211,7 +211,7 @@ public class LoginTest implements IRetryAnalyzer, IAnnotationTransformer {
 	}
 
 	/* TestCaseId - C17967 */
-	@Test(enabled = true, priority = 5)
+	@Test(enabled = false, priority = 5)
 	public void loginWithValidUserNameAndEmptyPassword() {
 
 		webAppHelper.refreshBrowser();
@@ -407,7 +407,7 @@ public class LoginTest implements IRetryAnalyzer, IAnnotationTransformer {
 	}
 	
 	/* TestCaseId - C18023 */
-	@Test(enabled = true, priority = 13)
+	@Test(enabled = false, priority = 13)
 	public void validScanIdAndInvalidUserNamePassword() {
 		
 		webAppHelper.refreshBrowser();
@@ -421,8 +421,8 @@ public class LoginTest implements IRetryAnalyzer, IAnnotationTransformer {
 		webAppHelper.findElementByXPath("//button[text()='Login']").click();
        
 		logger.info("Selecting profile icon");
-		webAppHelper.waitForElementToBeClickable("//div[contains(@class,'profile-custiom-wording')]").click();
-		//webAppHelper.findElementByXPath("//div[contains(@class,'profile-custiom-wording')]").click();
+		//webAppHelper.waitForElementToBeClickable("//div[contains(@class,'profile-custiom-wording')]");
+		webAppHelper.findElementByXPath("//div[contains(@class,'profile-custiom-wording')]").click();
 
 		logger.info("clicking Logout option");
 		webAppHelper.findElementByXPath("//a[text()='Logout']").click();
@@ -432,7 +432,7 @@ public class LoginTest implements IRetryAnalyzer, IAnnotationTransformer {
      
 	
 	/* TestCaseId - C17893 */
-	@Test(enabled = true, priority = 14, groups = { "SmokeTest" })
+	@Test(enabled = false, priority = 14, groups = { "SmokeTest" })
 	public void validScanID() {
 
 		webAppHelper.refreshBrowser();
