@@ -6,19 +6,14 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Java CI with Maven
-
-on:
-  push:
-    branches: [ "QA" ]
-  pull_request:
-    branches: [ "QA" ]
+name: automation for yaml
+on: [push, workflow_dispatch]
 env:
   WORKING_DIRECTORY: Demo1folder/DemoFolder/webuitest/pom.xml
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v3
@@ -28,14 +23,10 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-
+        publishJUnitResults: true
+        testResultsFiles: '**/surefire-reports/TEST-*.xml'
     - uses: browser-actions/setup-chrome@latest
-      with:
-        chrome-version: beta
-    - run: chrome --version    
+    - run: chrome --version
+      
     - name: Build with Maven
       run: mvn -B package --file "${{env.WORKING_DIRECTORY}}"
-
-    # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
-    - name: Update dependency graph
-      uses: advanced-security/maven-dependency-submission-action@571e99aab1055c2e71a1e2309b9691de18d6b7d6
