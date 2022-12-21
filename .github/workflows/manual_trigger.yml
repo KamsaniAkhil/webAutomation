@@ -27,9 +27,9 @@ jobs:
     - run: chrome --version
     - uses: dorny/test-reporter@v1
       with:
-        artifact: test-results
+        artifact: junit
         name: JEST Tests                  
-        path: '*.xml'                     
+        path: 'Demo1folder/DemoFolder/webuitest/test-output/junitreports/*.xml'                     
         reporter: jest-junit   
    
     - name: Build with Maven
