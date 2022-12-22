@@ -6,12 +6,12 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Java CI with Maven
+name: Workkflowforspecific branch
 
 on:
   push:
     branches: [ "QA" ]
-    
+  workflow_dispatch:
 env:
   WORKING_DIRECTORY: Demo1folder/DemoFolder/webuitest/pom.xml
 
