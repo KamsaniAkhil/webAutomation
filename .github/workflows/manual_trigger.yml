@@ -30,6 +30,6 @@ jobs:
           path: /Demo1folder/DemoFolder/webuitest/test-output/emailable-report.html
    
     - name: Build with Maven
-      run: mvn test -Dtest="DashboardTest"  --file "${{env.WORKING_DIRECTORY}}"
+      run: mvn test -Dtest="LoginTest"  --file "${{env.WORKING_DIRECTORY}}"
 
     
