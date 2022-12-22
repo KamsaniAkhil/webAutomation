@@ -9,7 +9,7 @@
 name: final Workflow for Windows
 on: 
   workflow_run:
-    workflows: ["final Workflow for Windows"]
+    workflows: ["manual_trigger"]
     types: [requested]
     branches:
       -"main"
