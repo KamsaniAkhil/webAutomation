@@ -26,7 +26,7 @@ jobs:
         pip install trcli
         trcli -y \
             -h https://saiaravind123.testrail.io/ \
-            --Project "Sample Project" \
+            --Project "Test Run 12/23/2022" \
             -u aravindsai879@gmail.com  \
             -p 9Nb3rW2TxykjsXlNGkBF  \
             parse_junit \
