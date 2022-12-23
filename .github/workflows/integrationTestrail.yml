@@ -4,7 +4,7 @@ env:
   WORKING_DIRECTORY: Demo1folder/DemoFolder/webuitest/pom.xml
 jobs:
   send-test-results-to-testrail:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
     - uses: actions/checkout@v3
     - name: Set up JDK 17
@@ -31,4 +31,4 @@ jobs:
             -p 9Nb3rW2TxykjsXlNGkBF  \
             parse_junit \
             --title "Automated Tests from GitHub workflow" \
-            -f "Demo1folder/DemoFolder/webuitest/test-output/testng-results.xml"  
+            -f "Demo1folder/DemoFolder/webuitest/test-output/junitreports/TEST-com.ots.test.ui.LoginTest.xml"  
