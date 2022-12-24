@@ -23,10 +23,16 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-        publishJUnitResults: true
-        testResultsFiles: '**/surefire-reports/TEST-*.xml'
     - uses: browser-actions/setup-chrome@latest
     - run: chrome --version
       
     - name: Build with Maven
-      run: mvn -B package --file "${{env.WORKING_DIRECTORY}}"
+      run: mvn test -Dtest="LoginTest"  --file "${{env.WORKING_DIRECTORY}}"
+    - name: Publish Test Results
+    - uses: EnricoMi/publish-unit-test-result-action@v2
+      if: always()
+      with:
+       junit_files: "Demo1folder/DemoFolder/webuitest/test-output/junitreports/TEST-com.ots.test.ui.LoginTest.xml"
+
+      
+   
