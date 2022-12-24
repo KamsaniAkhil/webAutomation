@@ -3,6 +3,7 @@
 <suite name="Runway">
   <test thread-count="5" name="Test">
     <classes>
+      
       <class name="com.runway.test.ui.DashboardTest"/>
   </classes>
   </test> <!-- Test -->
