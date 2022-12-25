@@ -31,7 +31,7 @@ jobs:
     - name: Build with Maven
       run: mvn test -Dtest="DashboardTest" --file pom.xml
     - name: publish the automation test result
-    - uses: EnricoMi/publish-unit-test-result-action@v2
+      uses: EnricoMi/publish-unit-test-result-action@v2
       if: always()
       with:
        junit_files: "test-results/junit/**/*.xml"
