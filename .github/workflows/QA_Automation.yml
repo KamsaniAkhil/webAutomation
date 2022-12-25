@@ -30,11 +30,8 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn test -Dtest="DashboardTest" --file "${{env.WORKING_DIRECTORY}}"
-    - name: publish the automation test result
-      uses: EnricoMi/publish-unit-test-result-action@v2
-      if: always()
-      with:
-       junit_files: "test-results/junit/**/*.xml"
+    - name: Publish Test Results
+      uses: EnricoMi/publish-unit-test-result-action@v2.2.0
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
