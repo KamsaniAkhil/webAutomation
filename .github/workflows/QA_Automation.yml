@@ -30,4 +30,8 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn test -Dtest="DashboardTest" --file "${{env.WORKING_DIRECTORY}}"
-    
+    - name: Publish Test Results
+      uses: EnricoMi/publish-unit-test-result-action/composite@v2
+      if: always()
+      with:
+       junit_files: "test-results/junit/**/*.xml"
