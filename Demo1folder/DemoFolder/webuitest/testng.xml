@@ -5,6 +5,17 @@
     <classes>
       
       <class name="com.runway.test.ui.DashboardTest"/>
+      <class name="com.runway.test.ui.NegativeOTSByDateTest"/>
+      <class name="com.runway.test.ui.OTSByDateTest"/>
+      <class name="com.runway.test.ui.LoginTest"/>
+      <class name="com.runway.test.api.OTSApiTest"/>
+      <class name="com.runway.test.ui.DashboardTest"/>
+      <class name="com.runway.test.ui.SyncManuallyTest"/>
+      <class name="com.runway.test.ui.SyncJobs"/>
+      <class name="com.runway.test.ui.OtsEnhancement"/>
+      <class name="com.runway.test.ui.SyncSettingsTest"/>
+      <class name="com.runway.test.ui.SyncData"/>
+      <class name="com.runway.test.api.MondaycomApiTest"/>
   </classes>
   </test> <!-- Test -->
 </suite> <!-- Runway -->
