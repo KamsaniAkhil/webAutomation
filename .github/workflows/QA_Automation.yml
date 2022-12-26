@@ -34,4 +34,4 @@ jobs:
       uses: EnricoMi/publish-unit-test-result-action/composite@v2
       if: always()
       with:
-       junit_files: "test-results/junit/**/*.xml"
+       junit_files: "webAutomation/.github/workflows/QA_Automation.yml"
