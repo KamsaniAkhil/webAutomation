@@ -42,4 +42,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
           name: code-coverage-report
-          path: Demo1folder/DemoFolder/webuitest/test-output/code-coverage.html
+          path: Demo1folder/DemoFolder/webuitest/test-output/emailable-report.html
