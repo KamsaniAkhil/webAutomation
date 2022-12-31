@@ -38,6 +38,12 @@ jobs:
           path: |
             dist
             !dist/**/*.md
+    - name: Step 4 - List the current directory
+      run: 1s -a
+    - name: Step 5 - What is in the target folder?
+      run: I
+       cd target
+       1s -a        
     - name: Archive code coverage results
       uses: actions/upload-artifact@v3
       with:
