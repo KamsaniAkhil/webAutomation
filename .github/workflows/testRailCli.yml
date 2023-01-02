@@ -33,6 +33,6 @@ jobs:
          --project "RUNWAY" `
          parse_junit `
          --title "Automated Tests Run" `
-         -f "TEST-com.runway.test.api.OTSApiTest.xml"
+         -f "Demo1folder/DemoFolder/webuitest/test-output/junitreports/TEST-com.runway.test.api.OTSApiTest.xml"
         
       
