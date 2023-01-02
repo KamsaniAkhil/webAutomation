@@ -1,7 +1,7 @@
 name: TestRail CLI
 on: [push, workflow_dispatch]
 env:
-  WORKING_DIRECTORY: sourcecode/QA/ui-automation/webuitest//pom.xml
+  WORKING_DIRECTORY: Demo1folder/DemoFolder/webuitest/pom.xml
 jobs:
   build:
 
