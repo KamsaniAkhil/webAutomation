@@ -35,4 +35,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
           name: code-coverage-report
-          report_paths: '**/build/test-results/test/TEST-*.xml'
+          path: '**/build/test-results/test/TEST-*.xml'
