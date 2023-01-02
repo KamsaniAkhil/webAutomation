@@ -8,7 +8,7 @@
 
 name: automation QA
 
-on: [push, workflow_dispatch]
+on: workflow_dispatch
 env:
    WORKING_DIRECTORY: Demo1folder/DemoFolder/webuitest/pom.xml
 jobs:
