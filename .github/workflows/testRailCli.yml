@@ -15,11 +15,6 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-        publishJUnitResults: true
-        testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    - uses: browser-actions/setup-chrome@latest
-    - run: chrome --version
-      
     - name: Build with Maven
       run: mvn test -Dtest="OTSApiTest" --file "${{env.WORKING_DIRECTORY}}"
     - name: TestRail CLI upload results
@@ -30,7 +25,7 @@ jobs:
          -h " https://saiaravind123.testrail.io/" `
          -u "aravindsai879@gmail.com" `
          -p "9Nb3rW2TxykjsXlNGkBF" `
-         --project "RUNWAY" `
+         --project "Sample Project" `
          parse_junit `
          --title "Automated Tests Run" `
          -f "test-output/junitreports/TEST-com.runway.test.api.OTSApiTest.xml"
