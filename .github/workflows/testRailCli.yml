@@ -1,7 +1,7 @@
 name: TestRail CLI
 on: [push, workflow_dispatch]
 env:
-  WORKING_DIRECTORY: test-output/junitreports/
+  WORKING_DIRECTORY: test-output/junitreports/TEST-com.runway.test.api.OTSApiTest.xml
  
 jobs:
   build:
@@ -27,6 +27,6 @@ jobs:
          --project "Sample Project" `
          parse_junit `
          --title "Automated Tests Run" `
-         -f  "${{env.WORKING_DIRECTORY}}TEST-com.runway.test.api.OTSApiTest.xml"
+         -f  "${{env.WORKING_DIRECTORY}}"
         
       
