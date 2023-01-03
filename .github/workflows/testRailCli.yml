@@ -15,8 +15,6 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven
-      run: mvn test -Dtest="OTSApiTest" --file "${{env.WORKING_DIRECTORY}}"
     - name: TestRail CLI upload results
       if: always()
       run: |
