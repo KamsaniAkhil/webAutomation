@@ -8,7 +8,7 @@
 
 name: new yaml for result
 
-on: workflow_dispatch  
+on: [push,workflow_dispatch] 
 env:
   WORKING_DIRECTORY: Demo1folder/DemoFolder/webuitest/pom.xml
 jobs:
