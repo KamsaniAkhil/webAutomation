@@ -1,5 +1,5 @@
 name: TestRail CLI
-on: [push, workflow_dispatch]
+on: [workflow_dispatch]
 env:
   WORKING_DIRECTORY: test-output/junitreports/TEST-com.runway.test.api.OTSApiTest.xml
  
