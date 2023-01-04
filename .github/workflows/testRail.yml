@@ -2,7 +2,7 @@ name: testRail cli application
 
 on: [workflow_dispatch]
 env:
-  WORKING_DIRECTORY: test-output/junitreports/TEST-com.ots.test.ui.DashboardTest.xml
+  WORKING_DIRECTORY: Demo1folder/DemoFolder/webuitest/test-output/junitreports/TEST-com.ots.test.ui.DashboardTest.xml
 jobs:
   execute-tests:
     runs-on: ubuntu-latest
