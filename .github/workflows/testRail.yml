@@ -1,0 +1,26 @@
+name: testRail cli application
+
+on: [workflow_dispatch]
+env:
+  WORKING_DIRECTORY: test-output/junitreports/TEST-*.xml
+jobs:
+  execute-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    - name: Test rail upload result
+      run: |
+        pip install trcli
+        trcli -y \
+          -h "https://saiaravind123.testrail.io/" \
+          -u "aravindsai879@gmail.com" \
+          -p "9Nb3rW2TxykjsXlNGkBF" \
+          --project "Sample Project" \
+          parse_junit \
+          --title "Automated Tests Run" \
+          -f "${{env.WORKING_DIRECTORY}}" \
