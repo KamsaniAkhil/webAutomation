@@ -108,7 +108,7 @@ public class DashboardTest implements IRetryAnalyzer, IAnnotationTransformer {
 
 	/* TestCaseID is C18994 */
 	@Test(enabled = true, priority = 1)
-	public void landingWelcomePage() throws IOException, APIException {
+	public void landingWelcomePage()  {
 
 		webAppHelper.loginPage(username, password);
 		webAppHelper.waitForElementToBeLoadedByClassName("welcomeMessage");
@@ -126,6 +126,13 @@ public class DashboardTest implements IRetryAnalyzer, IAnnotationTransformer {
 		logger.info("Asserting Logo css value");
 		Assert.assertEquals(logoPosition, "middle");
 
+//		if (logoPosition.contains("middle")) {
+//
+//			tr.addResultForTestCase("1", "1", tr.TEST_CASE_PASSED_STATUS, "");
+//		} else {
+//			tr.addResultForTestCase("1", "1", tr.TEST_CASE_PASSED_STATUS, "");
+//
+//		}
 
 	}
 
@@ -389,10 +396,10 @@ public class DashboardTest implements IRetryAnalyzer, IAnnotationTransformer {
 		String copyRightName = webAppHelper.findElementByXPath("//span[@class='ml-1']").getText();
 
 		logger.info("Asserting copyright Name");
-		Assert.assertEquals(copyRightName, "© 2022 AIMS360");
+		Assert.assertEquals(copyRightName, "© 2023 AIMS360");
 
 	}
-
+	
 	@AfterClass
 	public void unsetUp() {
 		webAppHelper.quitBrowser();
