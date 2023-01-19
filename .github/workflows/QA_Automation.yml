@@ -8,12 +8,17 @@
 
 name: new yaml for result
 
-on: [push,workflow_dispatch] 
+on: 
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: "The branch we want to trigger"
+        required: true       
+      
 env:
   WORKING_DIRECTORY: Demo1folder/DemoFolder/webuitest/pom.xml
 jobs:
   build:
-
     runs-on: windows-latest
 
     steps:
@@ -24,12 +29,16 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
+        ref: ${{github.event.inputs.branch}}
     - uses: browser-actions/setup-chrome@latest
     - run: chrome --version
     - name: Build with Maven
       run: mvn test -Dtest="OTSApiTest" --file "${{env.WORKING_DIRECTORY}}"
-    - name: Archive code coverage results
-      uses: actions/upload-artifact@v3
-      with:
-          name: code-coverage-report
-          path: '**/build/test-results/test/TEST-*.xml'
+    - name: Run tests
+      run: |
+        echo "Running tests..."
+        echo "on branch ${{github.event.inputs.branch}}"
+    - name: run additional steps
+      if: github.event.inputs.branch == 'main'
+      run: |
+        echo "Running additional steps on main branch only"
