@@ -39,6 +39,6 @@ jobs:
         echo "Running tests..."
         echo "on branch ${{github.event.inputs.branch}}"
     - name: run additional steps
-      if: github.event.inputs.branch == 'main'
+      if: github.event.inputs.branch == 'QA'
       run: |
         echo "Running additional steps on main branch only"
